@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+
+<link rel="stylesheet" type="text/css" href="css/map.css">
+<script type="text/javascript" src="js/lib/jquery.js"></script>
+<script type="text/javascript" src="js/lib/raphael-min.js"></script>
+<script type="text/javascript" src="js/res/chinaMapConfig.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	$('#ChinaMap').SVGMap({
+		mapName: 'china',
+		mapWidth: 1200,
+		mapHeight: 700,
+		stateInitColor:'58d1cf',
+		stateHoverColor:'84f4f2',
+		stateSelectedColor:'58d1cf',
+		showTip: false
+	});
+});
+</script>
+
+
+</head>
+<body>
+	
+		<div class="items" id="Item0">
+            <a href="javascript:;" class="fold"></a>
+            <div class="itemCon">
+            	<div id="ChinaMap"></div>
+	        </div>
+	    </div>
+
+
+</body>
+</html>

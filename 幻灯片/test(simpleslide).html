@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>jQuery Plugin - Simple Slideshow</title>
+		<style>
+			body, div, p, h1 { margin: 0; padding: 0; }
+			body { font: 12px/1.7 Verdana; color: #555; }
+			#container { width: 960px; margin: 0 auto; }
+			#header,
+			#content { margin-bottom: 30px; }
+			
+			#simpleslide { padding: 5px; border: solid 1px #ccc; }
+			#simpleslide .simpleslide-item { width: 50px; height: 60px; margin: 5px; font-size: 22px; line-height: 50px; text-align: center; border: solid 1px #ccc; background: #f1f1f1; }
+			#simpleslide .simpleslide-prev,
+			#simpleslide .simpleslide-next { color: #666; }
+		</style>
+		<script src="js/jquery-1.9.1.js"></script>
+		<script src="js/jquery.simpleslide.js"></script>
+		<script>
+			$(function() {
+				$('#simpleslide').simpleslide({'visible': 1,'auto':2000, 'extra':0});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="content">
+				<div >
+				<ul id="simpleslide">
+					<li class="simpleslide-item">1</li>
+					<li class="simpleslide-item">2</li>
+					<li class="simpleslide-item">3</li>
+					<li class="simpleslide-item">4</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

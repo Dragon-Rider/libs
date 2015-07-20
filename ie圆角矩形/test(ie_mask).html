@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>圆角蒙板(兼容ie)</title>
+
+	<style type="text/css">
+
+	*
+	{
+		margin: 0;
+		padding:0;
+	}
+
+	.pic
+	{
+		width: 180px;
+		height: 180px;
+			overflow: hidden;
+
+	}
+	.mask
+	{
+		width: 180px;
+		height: 180px;
+	}
+
+	.box
+	{
+		height: 180px;
+		width: 180px;
+		
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.overlay
+	{
+		background: url(img/mask.png);
+		height: 180px;
+		width: 180px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<span class="overlay"></span>
+		<img src="img/managers/manager01.jpg">
+	</div>
+
+
+	<div class="pic" style="background: url(img/managers/manager01.jpg);">
+		<img class="mask" src="img/mask.png">
+	</div>
+
+
+
+
+
+	<script src="./js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
+
+	<!--[if IE 6]>
+		<script src="js/DD_belatedPNG_0.0.8a.js"></script> 
+		<script>
+			DD_belatedPNG.fix('.mask, .overlay');
+			
+		</script>
+<![endif]-->
+</body>
+</html>
