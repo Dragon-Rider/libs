@@ -1,0 +1,8 @@
+.project
+.idea/
+/src/fis-conf-local.js
+/src/fis-config-local.js
+/public/
+/output/
+/dist/
+_bak/
